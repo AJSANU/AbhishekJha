@@ -30,12 +30,11 @@ function About() {
         <div>
           Hello! This is Abhishek Jha
           <br className="sm:block hidden" />
-          This is Abhishek Jha, a CSE graduated student and a gold Medalist from chandigarh University. 
-          Worked with biggest MNC like Orcale cloud, Amazon, teradata etc. had given me enough experience to work under all circumstances. 
-          Pation, pateinece , discipline and hunger of achieving my goals is something that drives my day to day. 
-          With all the technical skills I have, and the innovative ideas I processed, I am confident enough to scale my best in any environment. 
-          Having more than 4 years of experience gave me enough confidence to work with some of the best minds so far.
-          
+          , I am a Computer Science Engineering graduate and a gold medalist from Chandigarh University. 
+          My experience working with leading multinational corporations like Oracle Cloud, Amazon, and Teradata has equipped me to thrive in various environments. 
+          My passion, patience, discipline, and relentless drive to achieve my goals motivate me daily. 
+          With my technical skills and innovative ideas, I am confident in my ability to excel in any setting. Over the past four years, 
+          I have gained the confidence to collaborate with some of the brightest minds in the industry.
           Let&apos;s collaborate to bring your ideas to life!
         </div>
         <div className="w-fit break-words">

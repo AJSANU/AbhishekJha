@@ -232,12 +232,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2022 - August 2024",
     points: [
-      "Design and develop some of key feature in AI vision like key value extraction, face detection, video service etc .",
-      "Implemented code hint feature support that is widely accepted inside the org for various othe feature.",
-      "Led the design and implementation of the frontend, providing a user-friendly interface for efficient using of AI vision and document service.",
-      "Created a labilng platform for key value labling development.",
-      "Build multiple region support for AI vision cloud. ",
-      "Created multiple pipeline support for console feature whitlisting and easy onboard of customer through the same."
+      "Designed and developed key features in AI vision, such as key value extraction, face detection, and video services.",
+      "Implemented a code hint feature that is widely accepted within the organization for various other features.",
+      "Led the design and implementation of the frontend, providing a user-friendly interface for efficient use of AI vision and document services.",
+      "Created a labeling platform for key value labeling development.",
+      "Built multiple region support for AI vision cloud.",
+      "Established multiple pipeline support for console feature whitelisting and easy onboarding of customers through the same."
     ],
   },
   {
@@ -247,10 +247,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "January 2022 - March 2022",
     points: [
-      "Worked on building pipeline to integrate the SERVICE NOW and AWS to create an automate driver onboard system.",
-      "Worked on different scenarios of AWS site provisioning where major challenge was to integrate different components and requirements of different users.",
-      "Create Automation for Site provisioning via AWS and GCP.",
-      "Worked to create a remediation pipeline for log4J on various instances of Teradata."
+      "Worked on building a pipeline to integrate SERVICE NOW and AWS to create an automated driver onboarding system.",
+      "Handled various scenarios of AWS site provisioning, where the major challenge was integrating different components and user requirements.",
+      "Created automation for site provisioning via AWS and GCP.",
+      "Developed a remediation pipeline for log4J on various instances of Teradata."
     ],
   },
   {
@@ -260,11 +260,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "September 2020 - January 2022",
     points: [
-      "I was a part of devOps team in Teradata where I was fully functional on building cross relationship between Software Development and Operational Team.",
-      "Developed an unified dashboard to integrate all the pipelines within various team, and to give enhanced feature like detail reporting and management of those pipeline.",
-      "As part of reducing software security and compliance issues, I developed black duck pipeline using Synopsys detect and Jenkins pipeline that helped in increasing the amount of code undergo in pipeline for vulnerability check",
-      "Developed SCM release pipeline for automating the SCM release reducing the time to make release within Teradata.",
-      "Worked on the maintenance of existing pipeline like feature pipeline, hook manager etc. Added new features to existing pipeline and improving the existing pipelines."
+      "Was part of the DevOps team at Teradata, where I facilitated cross-functional relationships between Software Development and Operational Teams.",
+      "Developed a unified dashboard to integrate all the pipelines across various teams, providing enhanced features like detailed reporting and management of those pipelines.",
+      "As part of reducing software security and compliance issues, I developed a Black Duck pipeline using Synopsys Detect and Jenkins pipeline, which helped increase the volume of code undergoing vulnerability checks.",
+      "Created an SCM release pipeline for automating releases, reducing the time required to make releases within Teradata.",
+      "Maintained existing pipelines like feature pipelines and hook managers, adding new features and improving current pipelines."
     ],
   },
   {
@@ -274,12 +274,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "September 2019 - August 2020",
     points: [
-      "I was a part of Amazon Relay Team.",
-      "Created automation system for automating different test cases for Amazon relay in Asia-Australia region (Covering test cases for India Region, Japan Region and Australia region.",
-      "Modified the features of Amazon Relay website and re-modified them.",
-      "Done automation and manual testing on release of Amazon Relay 2.0.",
-      "Work with AWS to create an automate driver onboard system.",
-      "Bring the pipeline stability from 40 percent to 93 percent in terms of test cases passed."
+      "Was part of the Amazon Relay Team.",
+      "Created an automation system for automating different test cases for Amazon Relay in the Asia-Australia region (covering test cases for India, Japan, and Australia).",
+      "Modified and enhanced features of the Amazon Relay team that led to a significant reduction in time taken for various processes.",
+      "Documented current and future states of the existing process for ease of understanding."
     ],
   },
   {
