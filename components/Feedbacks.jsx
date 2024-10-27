@@ -16,7 +16,7 @@ function FeedbackCard({
 }) {
   return (
     <motion.section
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      variants={textVariant*()}
       className="bg-black-200 p-10 rounded-3xl xs:w-[450px] w-full"
     >
       <p className="text-white font-black text-[48px]">&quot;</p>
@@ -60,7 +60,7 @@ function Feedback() {
         </motion.div>
       </div>
       <div
-        className={`-mt-20 pb-14 paddingX flex flex-wrap gap-7 justify-center`}
+        className={`mt-20 pb-14 paddingX flex flex-wrap gap-7 justify-center`}
       >
         {testimonials.map((testimonial, index) => (
             <FeedbackCard

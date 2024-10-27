@@ -379,7 +379,6 @@ const projects = [
     ],
     image: "/assets/projects/ENCRYPTION.png",
     source_code_link: "https://github.com/AJSANU/Crypt-Master",
-    // deployed_link: "https://fig-pro-github.vercel.app",
   },
   {
     name: "Facebook Scrapper",
@@ -401,7 +400,6 @@ const projects = [
     ],
     image: "/assets/projects/FACEBOOK.jpeg",
     source_code_link: "https://github.com/AJSANU/FcaebookScrapper",
-    // deployed_link: "https://gdscmvjce.vercel.app/",
   },
   {
     name: "Project Viewer",
