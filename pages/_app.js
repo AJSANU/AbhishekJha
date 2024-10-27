@@ -27,8 +27,8 @@ export default function App({ Component, pageProps }) {
 	const description =
 		"Hello! I'm Abhishek Jha, a passionate developer and problem solver, writing code to make life simpler.";
 	const avatar =
-		"https://res.cloudinary.com/dyle3hnpw/image/upload/v1696091629/portfolio/WhatsApp_Image_2023-09-30_at_10.02.55_PM_jk44v9.jpg";
-	const url = "https://shivam-sharma-myportfolio.vercel.app/";
+		"https://github.com/AJSANU/AbhishekJha/blob/main/public/assets/icons/favicon/ABHISHEKPNG.png";
+	const url = "https://1abhishek1998.netlify.app/";
 
 	return (
 		<>
