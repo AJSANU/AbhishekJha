@@ -33,9 +33,7 @@ function FeedbackCard({
               {designation} of {company}
             </p>
           </div>
-          <div
-            className="w-[100px] h-[100px] relative flex flex-row items-center group cursor-pointer"
-          >
+          <div className="w-[100px] h-[100px] relative flex flex-row items-center group cursor-pointer">
             <Image
               src={image}
               alt={`feedback_by-${name}`}
@@ -52,25 +50,27 @@ function FeedbackCard({
 
 function Feedback() {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div className={`bg-tertiary rounded-2xl padding min-h-[300px]`}>
-        <motion.div variants={textVariant()}>
-          <p className={"sectionSubText"}>What others say</p>
-          <h2 className={"sectionHeadText"}>Testimonials.</h2>
-        </motion.div>
-      </div>
-      <div
-        className={`mt-20 pb-14 paddingX flex flex-wrap gap-7 justify-center`}
+	// mt-12 bg-black-100 rounded-[20px]
+    <section className="w-full h-fit p-8 mt-20" id="feedback">
+      <motion.div variants={textVariant()} initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className="text-center mx-auto"
       >
-        {testimonials.map((testimonial, index) => (
-            <FeedbackCard
-              key={testimonial.name}
-              index={index}
-              {...testimonial}
-            />
+        <p className={"sectionSubText"}>What others say (based on linkedin , medium or other platform)</p>
+        <h2 className={"sectionHeadText"}>Testimonials.</h2>
+      </motion.div>
+      <div
+        className={`mt-20 flex flex-co`}
+		style={{ overflowY : "scroll", overflowX: "scroll" }}
+      >
+		 {testimonials.map((testimonial, index) => (
+		<div style={{ marginRight: "100px", width: "25%", display: "block"}} key={testimonial.name}>
+          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+		</div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

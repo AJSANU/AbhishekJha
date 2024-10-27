@@ -377,7 +377,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "/assets/projects/ENCRYPTION.png",
+    image: "/assets/projects/ENDATA.png",
     source_code_link: "https://github.com/AJSANU/Crypt-Master",
   },
   {
