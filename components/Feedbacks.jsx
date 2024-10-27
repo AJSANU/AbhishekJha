@@ -16,10 +16,12 @@ function FeedbackCard({
 }) {
   return (
     <motion.section
-      variants={textVariant()}
-      className="bg-black-200 p-10 rounded-3xl xs:w-[450px] w-full"
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
     >
-      <p className="text-white font-black text-[48px]">&quot;</p>
+      <p className="text-black font-black text-[48px]">&quot;</p>
 
       <div className="mt-1">
         <p className="text-purple tracking-wider text-[18px]">{testimonial}</p>
@@ -50,24 +52,27 @@ function FeedbackCard({
 
 function Feedback() {
   return (
-	// mt-12 bg-black-100 rounded-[20px]
+    // mt-12 bg-black-100 rounded-[20px]
     <section className="w-full h-fit p-8 mt-20" id="feedback">
-      <motion.div variants={textVariant()} initial="hidden"
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         className="text-center mx-auto"
       >
-        <p className={"sectionSubText"}>What others say (based on linkedin , medium or other platform)</p>
+        <p className={"sectionSubText"}>
+          What others say (based on linkedin , medium or other platform)
+        </p>
         <h2 className={"sectionHeadText"}>Testimonials.</h2>
       </motion.div>
-      <div
-        className={`mt-20 flex flex-co`}
-		style={{ overflowY : "scroll", overflowX: "scroll" }}
-      >
-		 {testimonials.map((testimonial, index) => (
-		<div style={{ marginRight: "100px", width: "25%", display: "block"}} key={testimonial.name}>
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-		</div>
+      <div className="md:mt-5 mt-5 flex justify-center flex-wrap gap-2">
+        {testimonials.map((testimonial, index) => (
+            <FeedbackCard
+              key={testimonial.name}
+              index={index}
+              {...testimonial}
+            />
         ))}
       </div>
     </section>

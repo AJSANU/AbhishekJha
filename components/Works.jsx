@@ -87,21 +87,21 @@ function ProjectCard({
 
 function Works() {
   return (
-    <section className="xl:my-36 md:mx-36 p-8 " id="projects">
+    <section className="w-full h-fit p-8 mt-20 " id="projects">
       <motion.div
         variants={textVariant()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <p className={"sectionSubText"}>My work</p>
-        <h2 className={"sectionHeadText"}>Projects.</h2>
+        <p className={"sectionSubText text-center"}>My work</p>
+        <h2 className={"sectionHeadText text-center"}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 dark:text-ctnSecondaryDark text-ctnSecondaryLight text-[17px] max-w-3xl leading-[30px]"
+          className="sectionSubText text-cente"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
