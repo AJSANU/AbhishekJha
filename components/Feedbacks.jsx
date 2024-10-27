@@ -16,7 +16,7 @@ function FeedbackCard({
 }) {
   return (
     <motion.section
-      variants={textVariant*()}
+      variants={textVariant()}
       className="bg-black-200 p-10 rounded-3xl xs:w-[450px] w-full"
     >
       <p className="text-white font-black text-[48px]">&quot;</p>

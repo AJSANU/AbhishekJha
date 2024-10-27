@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01JB6V5431VSM24PFX12DFQQE3
+  version: v3
+---
+
 # 3D Portfolio
 
 ![Portfolio Screenshot](/public/assets/readme_assets/screenshot.png)
@@ -16,7 +22,7 @@
 
 ## Demo
 
-You can see a live demo of the portfolio website at : 
+You can see a live demo of the portfolio website at : https://1abhishek1998.netlify.app/
 
 ## Features
 
@@ -49,12 +55,14 @@ You can see a live demo of the portfolio website at :
 ```bash {"id":"01JB1BAR1NYMXK8H5GD9HZFFNA"}
 git clone 
 
+
 ```
 
 2. Change to the project directory:
 
 ```bash {"id":"01JB1BAR1NYMXK8H5GDATZV7GM"}
 cd AbhishekJha
+
 
 ```
 
@@ -63,12 +71,14 @@ cd AbhishekJha
 ```bash {"id":"01JB1BAR1NYMXK8H5GDE4YT2CJ"}
 npm install
 
+
 ```
 
 4. To run the development server:
 
 ```bash {"id":"01JB1BAR1NYMXK8H5GDF0REP3G"}
 npm run dev
+
 
 ```
 
@@ -86,4 +96,4 @@ The project structure is organized as follows:
 
 ## Author
 
-- Abhishek Jha 
+- Abhishek Jha
