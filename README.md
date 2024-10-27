@@ -1,9 +1,3 @@
----
-runme:
-  id: 01JB1BAR1P4XTZ9D184Y2687HQ
-  version: v3
----
-
 # 3D Portfolio
 
 ![Portfolio Screenshot](/public/assets/readme_assets/screenshot.png)
