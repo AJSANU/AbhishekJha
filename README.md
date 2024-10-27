@@ -22,7 +22,7 @@ runme:
 
 ## Demo
 
-You can see a live demo of the portfolio website at
+You can see a live demo of the portfolio website at : 
 
 ## Features
 
@@ -60,7 +60,7 @@ git clone
 2. Change to the project directory:
 
 ```bash {"id":"01JB1BAR1NYMXK8H5GDATZV7GM"}
-cd 
+cd AbhishekJha
 
 ```
 
@@ -92,4 +92,4 @@ The project structure is organized as follows:
 
 ## Author
 
--
+- Abhishek Jha 
