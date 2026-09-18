@@ -1,88 +1,47 @@
-import { Analytics } from '@vercel/analytics/react';
-import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-
 import "@/styles/globals.css";
 
-import { PreLoader } from "@/components/Loader";
-
 export default function App({ Component, pageProps }) {
-	const [loading, setLoading] = useState(true);
-	useEffect(() => {
-		setTimeout(() => {
-			setLoading(false);
-		}, 3000);
-	}, []);
-
-	useEffect(() => {
-		if (loading) {
-			document.body.style.overflowY = "hidden";
-		} else {
-			document.body.style.overflowY = "auto";
-		}
-	}, [loading]);
-
-	const title = "Portfolio | Abhishek Jha";
-	const description =
-		"Hello! I'm Abhishek Jha, a passionate developer and problem solver, writing code to make life simpler.";
-	const avatar =
-		"https://github.com/AJSANU/AbhishekJha/blob/main/public/assets/icons/favicon/ABHISHEKPNG.png";
-	const url = "https://1abhishek1998.netlify.app/";
-
-	return (
-		<>
-			<Head>
-				<title>{title}</title>
-				<meta name="description" content={description} key="desc" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0"
-				/>
-				<meta property="og:title" content={title} />
-				<meta property="og:site_name" content={title}></meta>
-				<meta property="og:description" content={description} />
-				<meta property="og:image" content={avatar} />
-				<meta property="og:image:width" content="612" />
-				<meta property="og:image:height" content="612" />
-				<meta property="og:url" content={url} />
-				<meta property="og:type" content="website" />
-
-				<meta property="twitter:image" content={avatar} />
-				<meta property="twitter:card" content="summary_large_image" />
-				<meta name="twitter:creator" content="@1abhishek1998" />
-				<meta property="twitter:title" content={title} />
-				<meta property="twitter:description" content={description} />
-
-				<link rel="canonical" href={url} />
-				<link
-					rel="apple-touch-icon"
-					sizes="180x180"
-					href="/assets/icons/favicon/ABHISHEKPNG.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/assets/icons/favicon/ABHISHEKPNG.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href="/assets/icons/favicon/ABHISHEKPNG.png"
-				/>
-				<link
-					rel="manifest"
-					href="/assets/icons/favicon/site.webmanifest"
-				/>
-			</Head>
-
-			<ThemeProvider attribute="class" defaultTheme="dark">
-				<Component {...pageProps} loading={loading} />
-                <Analytics />
-				{loading && <PreLoader />}
-			</ThemeProvider>
-		</>
-	);
+  const title = "Abhishek Jha — Senior Software Engineer · Cloud & AI";
+  const description =
+    "Senior Software Developer at Oracle Cloud Infrastructure. Building intelligent cloud products, thoughtful interfaces, and reliable systems. Previously Teradata and Amazon.";
+  const siteUrl = (
+    process.env.NEXT_PUBLIC_SITE_URL || "https://1abhishek1998.netlify.app"
+  ).replace(/\/$/, "");
+  return (
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f7f6f2" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/portfolio-social.png`}
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/portfolio-social.png`}
+        />
+        <link rel="canonical" href={siteUrl} />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/icons/favicon/ABHISHEKPNG.png"
+        />
+      </Head>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
 }

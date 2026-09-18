@@ -1,0 +1,183 @@
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 560 / 500;
+  margin-inline: auto;
+  isolation: isolate;
+  user-select: none;
+}
+
+.drawing {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.coordinates {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 7px;
+  letter-spacing: 1.35px;
+}
+
+.sphere {
+  transform-origin: 280px 246px;
+  animation: sphereTurn 48s linear infinite;
+}
+
+.satellite {
+  transform-origin: 463px 187px;
+  animation: satellitePulse 4s ease-in-out infinite;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  padding: 12px 15px 12px 12px;
+  background: rgba(255, 254, 250, 0.94);
+  border: 1px solid rgba(210, 204, 193, 0.68);
+  border-radius: 9px;
+  box-shadow:
+    0 4px 7px rgba(67, 49, 28, 0.02),
+    0 12px 27px rgba(67, 49, 28, 0.065);
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+  animation: tileFloat 7s ease-in-out infinite;
+}
+
+.ui {
+  top: 27%;
+  left: 0;
+  transform: rotate(-5deg);
+  --tile-angle: -5deg;
+}
+
+.ai {
+  top: 34%;
+  right: 0;
+  transform: rotate(5deg);
+  --tile-angle: 5deg;
+  animation-delay: -2.7s;
+}
+
+.cloud {
+  bottom: 17%;
+  left: 9%;
+  transform: rotate(-3deg);
+  --tile-angle: -3deg;
+  animation-delay: -4.2s;
+}
+
+.skillIcon {
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #df5b32;
+  background: #fbede5;
+  border-radius: 6px;
+}
+
+.skillIcon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.skillTitle {
+  display: block;
+  color: #2b2c24;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.15px;
+}
+
+.skillSubtitle {
+  display: block;
+  margin-top: 3px;
+  color: #939082;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 6px;
+  line-height: 1.5;
+  letter-spacing: 0.65px;
+}
+
+@keyframes sphereTurn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tileFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--tile-angle));
+  }
+  50% {
+    transform: translateY(-7px) rotate(var(--tile-angle));
+  }
+}
+
+@keyframes satellitePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    gap: 7px;
+    padding: 9px 10px 9px 8px;
+    border-radius: 7px;
+  }
+  .skillIcon {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+  }
+  .skillIcon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .skillTitle {
+    font-size: 11px;
+  }
+  .skillSubtitle {
+    font-size: 5px;
+    letter-spacing: 0.3px;
+  }
+  .ui {
+    left: 1%;
+  }
+  .ai {
+    right: 0;
+  }
+  .cloud {
+    bottom: 14%;
+    left: 8%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sphere,
+  .satellite,
+  .skill {
+    animation: none;
+  }
+}
